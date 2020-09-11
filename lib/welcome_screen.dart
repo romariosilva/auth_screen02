@@ -1,5 +1,3 @@
-import 'dart:js';
-
 import 'package:auth_screen02/signin_screen.dart';
 import 'package:flutter/material.dart';
 
