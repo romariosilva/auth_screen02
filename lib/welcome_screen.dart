@@ -10,7 +10,7 @@ class WelcomeScreen extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
-            flex: 70,
+            flex: 60,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Container(
@@ -23,7 +23,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            flex: 30,
+            flex: 40,
             child: Column(
               children: [
                 RichText(
@@ -35,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline4
                       ),
                       TextSpan(
-                        text: "O melhor local para fazer sua barba",
+                        text: "Bem-vindo a nossa barbearia",
                         style: Theme.of(context).textTheme.headline5
                       ),
                     ]
