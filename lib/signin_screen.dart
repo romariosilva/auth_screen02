@@ -8,6 +8,7 @@ class SigninScreen extends StatelessWidget {
       body: Column(
         children: [
           Expanded(
+            flex: 3,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
@@ -20,6 +21,7 @@ class SigninScreen extends StatelessWidget {
             ),
           ),
           Expanded(
+            flex: 4,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
@@ -39,6 +41,7 @@ class SigninScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  SizedBox(height: 20),
                   Padding(
                     padding: const EdgeInsets.only(bottom: 20),
                     child: Row(
@@ -53,7 +56,13 @@ class SigninScreen extends StatelessWidget {
                         Expanded(
                           child: TextField(
                             decoration: InputDecoration(
-                              hintText: "E-mail"
+                              hintText: "E-mail",
+                              hintStyle: TextStyle(
+                                color: Colors.white.withOpacity(.5)
+                              ),
+                            ),
+                            style: TextStyle(
+                              color: Colors.white
                             ),
                           ),
                         ),
@@ -72,7 +81,13 @@ class SigninScreen extends StatelessWidget {
                       Expanded(
                         child: TextField(
                           decoration: InputDecoration(
-                            hintText: "Senha",             
+                            hintText: "Senha",
+                            hintStyle: TextStyle(
+                              color: Colors.white.withOpacity(.5)
+                            ),            
+                          ),
+                          style: TextStyle(
+                            color: Colors.white
                           ),
                         ),
                       ),
