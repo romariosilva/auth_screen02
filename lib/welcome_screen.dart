@@ -1,4 +1,4 @@
-import 'package:auth_screen02/signin_screen.dart';
+import 'package:auth_screen02/login_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'contants.dart';
@@ -48,7 +48,7 @@ class WelcomeScreen extends StatelessWidget {
                         context, 
                         MaterialPageRoute(
                           builder: (context){
-                            return SigninScreen();
+                            return LoginScreen();
                           }
                         )
                       );
