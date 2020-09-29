@@ -18,12 +18,7 @@ class LoginScreen extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
                       children: [
-                        Text(
-                          "CADASTRE-SE",
-                          style: Theme.of(context).textTheme.button,
-                        ),
                         SizedBox(height: 30),
                         Padding(
                           padding: const EdgeInsets.only(bottom: 20),
@@ -128,6 +123,11 @@ class LoginScreen extends StatelessWidget {
                                   Icons.chat,
                                   color: Colors.white.withOpacity(.5),
                                 ),
+                              ),
+                              Spacer(),
+                              Text(
+                                "CADASTRE-SE",
+                                style: Theme.of(context).textTheme.button,
                               ),
                             ],
                           ),
